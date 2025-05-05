@@ -8,7 +8,8 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("../../icai2025-5f9879654f17.json")
+  credentials = file("C:/Users/pablo/OneDrive/Escritorio/Cloud Mayo/lab-1-aa-fed83ba3de93.json")
+
 
   project = var.gcp-project
   region  = var.gcp-region
