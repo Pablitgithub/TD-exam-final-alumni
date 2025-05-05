@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: gcr.io/examenfinal-458623/web:latest
+          image: gcr.io/lab-1-aa/web:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
