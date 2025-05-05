@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: storage
-          image: gcr.io/examenfinal-458623/storage:latest
+          image: gcr.io/lab-1-aa/storage:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
