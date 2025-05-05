@@ -14,17 +14,17 @@ spec:
     spec:
       containers:
         - name: web
-          image: gcr.io/icai2025/web:latest
+          image: gcr.io/examenfinal-458623/web:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 3000
           env:
             - name: STORAGE_SVC
-              value: "http://storage:5000"
+              value: "storage"
           livenessProbe:
             httpGet:
               path: /phrase
-              port: 80
+              port: 3000
             periodSeconds: 2
 ---
 apiVersion: v1
@@ -37,5 +37,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: 3000
   type: LoadBalancer
